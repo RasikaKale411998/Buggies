@@ -1,0 +1,52 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #02011A, #040A1D);
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .logo img {
+    width: 100px; /* Adjust the size as needed */
+  }
+  
+  .navigation i {
+    font-size: 24px; /* Adjust the size as needed */
+    cursor: pointer;
+    margin-left: 10px; /* Adjust the spacing as needed */
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-image {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-right: 10px; /* Adjust the spacing as needed */
+  }
+  
+  .dropdown {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  
+  .dropdown a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  
+  .profile:hover .dropdown {
+    display: block;
+  }
+  

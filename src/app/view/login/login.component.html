@@ -1,0 +1,142 @@
+<section class="vh-100">
+  <div *ngIf="loading" class="loader"></div> <!-- Loader element -->
+
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center  align-items-center h-100">
+
+      <!-- left side for buggy img  -->
+      <div class="col-md-9 col-lg-6 col-xl-5 bg-dark bg-gradient text-white text-center">
+        <div style="background: transparent 0% 0% no-repeat padding-box;
+       opacity: 1;">
+
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="220.531" height="45.718"
+            viewBox="0 0 220.531 45.718">
+            <g id="Group_75498" data-name="Group 75498">
+              <path id="Path_39185" data-name="Path 39185"
+                d="M170.578,6.526a4.391,4.391,0,0,1,1.4-3.282A4.771,4.771,0,0,1,175.419,1.9a4.89,4.89,0,0,1,3.443,1.29,4.335,4.335,0,0,1,1.4,3.335v23.34q0,7.851-5.163,12.53t-13.769,4.679c-5.737,0-10.2-1.559-13.608-4.679s-5.109-7.3-5.109-12.53V6.526a4.249,4.249,0,0,1,1.344-3.282,5.563,5.563,0,0,1,6.993,0,4.245,4.245,0,0,1,1.344,3.282v23.34a7.918,7.918,0,0,0,2.475,6.077,9.221,9.221,0,0,0,6.563,2.311,9.7,9.7,0,0,0,6.725-2.311,7.85,7.85,0,0,0,2.529-6.077V6.526Z"
+                transform="translate(-102.265 -1.362)" fill="#e46400" />
+              <path id="Path_39186" data-name="Path 39186"
+                d="M325,45.709a22.415,22.415,0,0,1-19.687-11.183A22.829,22.829,0,0,1,302.3,22.8a22.838,22.838,0,0,1,2.959-11.67,21.851,21.851,0,0,1,8.23-8.119A23.657,23.657,0,0,1,325.43,0a28.921,28.921,0,0,1,8.552,1.183,21.284,21.284,0,0,1,7.047,3.765,4.491,4.491,0,0,1,1.72,3.658,4.4,4.4,0,0,1-4.41,4.408,5.141,5.141,0,0,1-2.69-.968,25.358,25.358,0,0,0-4.841-2.419,15.123,15.123,0,0,0-5.271-.914A12.99,12.99,0,0,0,315.8,12.64a13.964,13.964,0,0,0-3.819,10.165,14.663,14.663,0,0,0,3.658,10.326A12.309,12.309,0,0,0,325,37a16.224,16.224,0,0,0,8.66-2.1q3.391-2.1,3.389-5.432c0-.574-.252-.86-.753-.86h-7.208a4.544,4.544,0,0,1-3.282-1.183,4.112,4.112,0,0,1-1.236-3.12,3.988,3.988,0,0,1,1.236-3.01,4.544,4.544,0,0,1,3.282-1.183h11.834a5.624,5.624,0,0,1,4.2,1.344q1.29,1.345,1.29,4.464,0,9.035-5.862,14.411T325,45.718Z"
+                transform="translate(-216.778 0)" fill="#e46400" />
+              <path id="Path_39187" data-name="Path 39187"
+                d="M501.82,45.709a22.415,22.415,0,0,1-19.687-11.183A22.829,22.829,0,0,1,479.12,22.8a22.838,22.838,0,0,1,2.959-11.67,21.851,21.851,0,0,1,8.23-8.119A23.657,23.657,0,0,1,502.25,0,28.92,28.92,0,0,1,510.8,1.183a21.283,21.283,0,0,1,7.047,3.765,4.491,4.491,0,0,1,1.72,3.658,4.246,4.246,0,0,1-1.29,3.118,4.252,4.252,0,0,1-3.12,1.29,5.141,5.141,0,0,1-2.69-.968,25.36,25.36,0,0,0-4.841-2.419,15.123,15.123,0,0,0-5.271-.914,12.99,12.99,0,0,0-9.735,3.927A13.964,13.964,0,0,0,488.8,22.805a14.663,14.663,0,0,0,3.658,10.326A12.309,12.309,0,0,0,501.82,37a16.223,16.223,0,0,0,8.66-2.1q3.391-2.1,3.389-5.432c0-.574-.252-.86-.753-.86h-7.208a4.544,4.544,0,0,1-3.282-1.183,4.112,4.112,0,0,1-1.236-3.12,3.989,3.989,0,0,1,1.236-3.01,4.544,4.544,0,0,1,3.282-1.183h11.834a5.624,5.624,0,0,1,4.2,1.344q1.29,1.345,1.29,4.464,0,9.035-5.865,14.411t-15.546,5.378Z"
+                transform="translate(-343.574 0)" fill="#e46400" />
+              <path id="Path_39188" data-name="Path 39188"
+                d="M665.265,47.072a5.012,5.012,0,0,1-3.443-1.236,4.159,4.159,0,0,1-1.4-3.282V31.26a16.319,16.319,0,0,0-.161-2.311,5.093,5.093,0,0,0-.914-2.2L647.3,9.428a4.988,4.988,0,0,1-.86-2.58,4.688,4.688,0,0,1,1.505-3.5A4.947,4.947,0,0,1,651.5,1.9a4.232,4.232,0,0,1,3.873,2.15l7.961,12.584q.968,1.506,2.043,1.505t2.043-1.505L675.161,4.05a4.226,4.226,0,0,1,3.873-2.15,4.895,4.895,0,0,1,3.6,1.451,4.766,4.766,0,0,1,1.451,3.5,5.014,5.014,0,0,1-.86,2.58L671.18,26.745a5.072,5.072,0,0,0-.914,2.2,16.349,16.349,0,0,0-.161,2.311V42.554a4.255,4.255,0,0,1-1.344,3.282A4.969,4.969,0,0,1,665.265,47.072Z"
+                transform="translate(-463.558 -1.362)" fill="#e46400" />
+              <g id="Group_75497" data-name="Group 75497" transform="translate(0 1.075)">
+                <path id="Path_39189" data-name="Path 39189"
+                  d="M39.059,104.012a21.289,21.289,0,0,1-5.4.444,21.86,21.86,0,0,1-5.321-.422c-.345-.076-.654-.144-.7-.144s-.068,1.228-.068,2.722v2.722l.345.345c.931.919,3.449,1.434,6.538,1.318,2.685-.1,4.348-.538,5.152-1.364l.3-.3v-2.761c0-1.519-.025-2.753-.059-2.753S39.455,103.913,39.059,104.012Z"
+                  transform="translate(-19.77 -75.524)" fill="#e46400" />
+                <path id="Path_39190" data-name="Path 39190"
+                  d="M37.025,42.152A8.154,8.154,0,0,0,32.5,40.121a19.285,19.285,0,0,0-3.1-.153,11.159,11.159,0,0,0-4.852,1.417,6.958,6.958,0,0,0-1.536,1.426l-.209.337.385,2.583c.218,1.417.41,2.6.427,2.614s.631-.076,1.361-.207a23.782,23.782,0,0,1,5.471-.506,24.076,24.076,0,0,1,5.463.529,6.289,6.289,0,0,0,1.067.153c.017-.014.209-1.188.419-2.6.444-2.968.47-2.744-.371-3.565Z"
+                  transform="translate(-16.35 -29.724)" fill="#e46400" />
+                <path id="Path_39191" data-name="Path 39191"
+                  d="M27,23.159a10.33,10.33,0,0,0,3.335-8.066,10.358,10.358,0,0,0-3.658-8.012Q23.023,3.8,17,3.8H6.671A6.435,6.435,0,0,0,1.938,5.735,6.44,6.44,0,0,0,0,10.468v29.9a6.8,6.8,0,0,0,6.991,6.991H18.18q6.671,0,10.651-3.873a13.338,13.338,0,0,0,3.98-10q0-7.312-5.808-10.326Zm-2.079-3.9c-.158.444-.385.484-1.14.192l-.645-.246-.243.223-.252.223.218,2.062c.5,4.824.637,7.053.461,7.7a14.919,14.919,0,0,0,.051,3.864,23.026,23.026,0,0,1-.345,6.914,5.966,5.966,0,0,1-1.417,2.883c-.849.812-3.811,1.695-6.645,1.986a8.792,8.792,0,0,1-1.89,0,21.344,21.344,0,0,1-5.3-1.188,3.187,3.187,0,0,1-1.31-.744,4.582,4.582,0,0,1-1.2-1.915A20.505,20.505,0,0,1,4.575,33.2a16.193,16.193,0,0,0,.085-2.606A46.434,46.434,0,0,1,5,21.83l.209-2.108-.252-.229-.252-.229-.58.215c-.73.269-.939.246-1.132-.122a.462.462,0,0,1-.034-.538,2.083,2.083,0,0,1,1.041-.852c.419-.184.4-.045.235-1.7a8.341,8.341,0,0,1,.051-3.3A16.507,16.507,0,0,1,6.869,8.669a8.917,8.917,0,0,1,5.169-2.023,26.3,26.3,0,0,1,4.818.144,7.438,7.438,0,0,1,4.592,2.345,24.991,24.991,0,0,1,2.215,4.009,8.87,8.87,0,0,1,.008,2.47c-.042.484-.1,1.166-.133,1.511l-.059.62.371.175c.9.413,1.25.857,1.084,1.341Z"
+                  transform="translate(0 -3.8)" fill="#e46400" />
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <p style="font: normal normal normal 36px/55px Poppins; letter-spacing: 0px; opacity: 1;">Nice to see you again
+        </p>
+        <p style="font: normal normal 600 80px/120px Poppins; letter-spacing: 0px; opacity: 1;">WELCOME BACK</p>
+        <p style="font: normal normal normal 18px/27px Poppins; letter-spacing: 0px; opacity: 1;">Lorem Ipsum is simply
+          dummy text of the printing and typesetting industryLorem Ipsum has been... Lorem Ipsum is simply dummy text of
+          the printing and typesetting industryLorem Ipsum has been...</p>
+      </div>
+
+      <!-- right side for login credential  -->
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+          <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+            <p class="lead fw-normal mb-4 me-3" style="text-align: left;
+            font: normal normal  40px/60px Poppins;
+            letter-spacing: 0px;
+            color: #303030;
+            opacity: 1;">Login to your account</p>
+          </div>
+
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form3Example3" style="text-align: left;
+            font: normal normal normal 18px/27px Poppins;
+            letter-spacing: 0px;
+            opacity: 1;" >User Name <span class="text-danger">*</span></label>
+            <input type="email" style="background: #F3F3F3 0% 0% no-repeat padding-box;
+            border: 1px solid #707070;
+            border-radius: 10px;
+            opacity: 0.3;"  formControlName="user_name" id="form3Example3" class="form-control form-control-lg"
+              placeholder="User Name" />
+
+              <div *ngIf="f['user_name'].touched && f['user_name'].invalid || submitted">
+                <div *ngIf="f['user_name'].hasError('required')">
+                  <div class="text-danger">
+                    Username is required!
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <label class="form-label" for="form3Example4" style="text-align: left; font: normal normal normal 18px/27px Poppins; letter-spacing: 0px; opacity: 1;">
+              Password <span class="text-danger">*</span>
+            </label>
+            <div style="position: relative;">
+              <input  formControlName="user_password" type="{{ passwordVisible ? 'text' : 'password' }}" style="background: #F3F3F3; border: 1px solid #707070; border-radius: 10px; opacity: 0.3;" id="form3Example4" class="form-control form-control-lg" placeholder="Password" />
+              <button type="button" (click)="togglePasswordVisibility()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: none; border: none; cursor: pointer;">
+                <svg id="icon_action_visibility_24px" data-name="icon/action/visibility_24px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" >
+                  <rect id="Boundary" width="32" height="32" fill="none" />
+                  <path id="_Color" data-name=" ↳Color" d="M14.734,20.092a15.713,15.713,0,0,1-9.009-2.818A15.855,15.855,0,0,1,0,10.046a15.83,15.83,0,0,1,29.468,0,15.854,15.854,0,0,1-5.724,7.229A15.713,15.713,0,0,1,14.734,20.092Zm0-16.743a6.7,6.7,0,1,0,6.7,6.7A6.7,6.7,0,0,0,14.734,3.349Zm0,10.716a4.019,4.019,0,1,1,4.019-4.019A4.023,4.023,0,0,1,14.734,14.065Z" transform="translate(1.339 6.028)" fill="#909090" />
+                </svg>
+              </button>
+            </div>
+            <div *ngIf="f['user_password'].touched && f['user_password'].invalid || submitted">
+              <div *ngIf="f['user_password'].hasError('required')">
+                <div class="text-danger">
+                  Password is required!
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+          <div class="text-center  mt-4 pt-2">
+
+            <button type="submit" class="btn btn-block" style="text-align: center;
+            font: normal normal medium 20px/30px Poppins;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            width: 100%;
+            border-radius: 10px;
+            background: #2DBB55 0% 0% no-repeat padding-box;">
+
+              <svg id="unlock-solid" xmlns="http://www.w3.org/2000/svg" width="18" height="20.898"
+                viewBox="0 0 18 20.898">
+                <path id="Path_1272" data-name="Path 1272"
+                  d="M55.705,7.225h-9v-1c0-2.462,2.538-4,5-4a4.362,4.362,0,0,1,4,2c.239.431.569.239,1,0s.239-.569,0-1c-1.67-3.015-4.985-3.67-8-2a5.347,5.347,0,0,0-3,5v1a4.671,4.671,0,0,0-3,4v6a3.721,3.721,0,0,0,4,4h9c2.461,0,5-1.539,5-4v-6C60.7,8.764,58.166,7.228,55.705,7.225Zm-3,8a1,1,0,0,1-2,0v-2a1,1,0,0,1,2,0Z"
+                  transform="translate(-42.705 -0.327)" fill="#fff" />
+              </svg>
+
+              LOGIN</button>
+
+            <div class="d-flex justify-content-center align-items-center small fw-bold mt-4 pt-1 mb-0">
+              <a href="#!" class="" style="text-align: left;
+              font: italic normal normal 18px/27px Poppins;
+              letter-spacing: 0px;
+              color: #707070;
+              opacity: 1;">Forgot password?</a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+</section>

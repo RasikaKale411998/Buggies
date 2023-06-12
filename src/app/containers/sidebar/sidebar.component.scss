@@ -1,0 +1,86 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    color: #707070;
+    position: relative;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 10%;
+    line-height: 27px;
+  }
+  
+  .sidebar.closed {
+    width: 1px;
+  }
+  
+  .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-menu li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar-menu li a {
+    text-decoration: none;
+    color: #707070;
+  }
+  
+  .sidebar-menu li a:hover {
+    color: #00FF00;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .toggle-button span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #707070;
+    margin-bottom: 6px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sidebar.closed .toggle-button span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  
+  .sidebar.closed .toggle-button span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .sidebar.closed .toggle-button span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  
+  .sidebar-menu li .menu-icon {
+    margin-right: 10px;
+  }
+
+  .sidebar-menu li .menu-icon img {
+    width: 20px; /* Adjust the size of the logos */
+    height: 20px;
+  }
+
+  .sidebar-menu li .menu-text {
+    font-family: 'Poppins', sans-serif; /* Add the desired font family */
+    font-size: 15px; /* Update to the desired font size */
+    line-height: 27px; /* Update to the desired line height */
+  }
